@@ -45,14 +45,14 @@ direction = gets.chomp
           mdecision = gets.chomp
           return "Murray looks at the closet and his master sees that he is looking in that direction and storms to the closet and opens the doo. He sees you croutching down and orders you out of the closet. 'Who do you think you are, coming into my house uninvited like this? And convincing Murray to not tell me. Some hold you have over him. What are you a witch? Or are you a goblin come to take over my home? What are you, you wretched creature?!'" if mdecision == "continue hiding in the closet"
           return "You jump out of the closet and yell, 'Do not hurt him! Who do you think you are? Talking to an innocent creature this way! How dare you!' In this moment you realized that this master is a big 'ole black bear with grizzly teeth and stands 8 feet tall. Now you understand why he is the master. Do you 1.) turn and run for dear life? Or 2.) Stay and see what happens next?" if mdecision == "Jump out of the closet and confront the master"
-          bbdecision = gets.chomp.to_s
+          bbdecision = gets.chomp
           return "" if bbdecision == "1"
           return "" if bbdecision == "2"
         return "Murray's master comes down and you see that he is an 8 foot tall black bear with grizzly terrifying teeth. (Now you see why is the master) The master says, 'Who are you to come into my home ans disturb me? How dare you! Do you havew any idea who I am?! I am Jaldinia, king of Leafery! Ruler of the under under world! I should tear you limb from limb and make you beg for mercy. You will bow before me! or. pay the penance.' You do not know what to do so you bow and pray that he does not indeed rip you limb from limb. Master says, 'Tell me, why have you come into my home and disturbed me and my slaves?! Speak!' You tremblingly say, 'I am sorry I do not mean to disturb you, sir but I needed a place to hide because a dragon was chasing me and I had no clue what else to do.' Master says, 'Ah and you would like to stay. I see. Well, if you would like to stay then you will become of my slaves. You will do what I say, when I say it.' Do you 1.) say yes? Or 2.) say no?" if hdecision == "stay and confront Murray's master"
           decisionyn = gets.chomp
           return "Master says, 'Welcome then, to my house. You will be the newest member and do as I say.' He holds up a knife and tells you to stab yourself and you do and you die. Game over" if decisionyn == "1"
           return "Master then tells you that you need to leave his house and are to never return. You look at Murray and he looks so scared. Do you 1.) turn and leave the house? Or 2.) Tell Murray's master that you are not leaving without him?" if decisionyn == "2"
-          cdecision = gets.chomp.to_s
+          cdecision = gets.chomp
           return "" if cdecision == "1"
           return "" if cdecision == "2"
         return "You turn around and walk toward the dragon and the dragon gets your dumb ass and you die. Game Over, Loser!" if idecision == "turn around"
