@@ -8,6 +8,7 @@ def pizza_counter
   product = people * slices
 
   large = 8
+  leftover = product % large
   medium = 6
   small = 4
 
