@@ -5,12 +5,18 @@ def paint_calculator
   puts "Is your room 'L' shaped?"
   lshaped = gets.chomp
 
+  zero_statement = "You have not entered a number or you entered 0 and neither of those will work."
 
   if round == "yes"
+    puts "What is the length of the round room?"
+    length = gets.chomp.to_i
     area2 = length
     radius = area2 / 2
     area_circle = 3.14 * (radius**2)
     gallons2 = area_circle / 350
+    if length == 0 
+      puts "You eitheer didn't input a number or put in zero and need to input a number higher than zero."
+    end
     if gallons2 < 1
       gallons2 = 1
       puts "You will need to purchase #{gallons2} gallon of paint"
@@ -37,7 +43,7 @@ def paint_calculator
     area3 = (rectangle1_length * rectangle1_width) + (rectangle2_length * rectangle2_width)
 
     gallons3 = area3 / 350
-
+    return zero_statment if rectangle1_length == 0 || rectangle1_width == 0 || rectangle2_length == 0 || rectangle2_width == 0
     if gallons3 < 1
       gallons3 = 1
       puts "You will need to purchase #{gallons3} gallon of paint."
